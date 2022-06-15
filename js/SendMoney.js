@@ -33,9 +33,9 @@ function createasset() {
   var x = {
     $class: "org.block.track.net.CreateSendMoney",
     MId: Mid,
-    Amount: mo,
-    pledgeId: Pid,
-    Doner: email,
+    Amount: Number(mo),
+    pledgeId: `org.block.track.net.ProjectPledge#${Pid}`,
+    Doner: `org.block.track.net.Doner#${email}`,
   };
   var myJSON = JSON.stringify(x);
   xhr.send(myJSON);
@@ -64,7 +64,7 @@ function sendmoney() {
   var x = {
     $class: "org.block.track.net.SendMoneyToMonFund",
     MId: MoneyId,
-    Amount: mo,
+    Amount: Number(mo),
     MonFundId: "MF1",
   };
   var myJSON = JSON.stringify(x);
@@ -74,8 +74,8 @@ function sendmoney() {
 function myFunction() {
   createasset();
 }
-function SendMoney() {
-  setTimeout(function myFunction1() {
-    sendmoney();
-  }, 5000);
-}
+// function SendMoney() {
+//   setTimeout(function myFunction1() {
+//     sendmoney();
+//   }, 5000);
+// }

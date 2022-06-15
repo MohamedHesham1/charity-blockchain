@@ -57,10 +57,10 @@ asset ProjectPledge identified by pledgeId {
 }
 
 abstract participant User {
-  --> ProjectPledge[] projectPledge 
+  --> ProjectPledge[] projectPledge optional
 }
 abstract participant User1 {
-  -->SendMoney []  sendMoney 
+  -->SendMoney []  sendMoney optional
 
 }
 participant Doner identified by email extends User1{

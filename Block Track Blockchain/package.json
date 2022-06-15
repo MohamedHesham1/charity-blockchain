@@ -3,7 +3,7 @@
     "composer": "^0.19.20"
   },
   "name": "block-track",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Track Donation System Using Blockchain Techonolgy",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/block-track.bna",
