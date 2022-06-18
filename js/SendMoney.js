@@ -73,9 +73,13 @@ function sendmoney() {
 
 function myFunction() {
   createasset();
+  localStorage.removeItem("donateId");
 }
-// function SendMoney() {
-//   setTimeout(function myFunction1() {
-//     sendmoney();
-//   }, 5000);
-// }
+
+document.addEventListener("DOMContentLoaded", setIdValue);
+function setIdValue() {
+  const donateId = localStorage.getItem("donateId");
+  if (donateId) {
+    document.querySelector("#project").value = donateId;
+  }
+}
