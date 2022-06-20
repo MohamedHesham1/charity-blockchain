@@ -200,13 +200,15 @@ h2 {
 
 body {
   font-size: 14px;
-  line-height: 1.8;
   color: #222;
   font-weight: 500;
   font-family: 'Poppins';
   margin: 0px;
-  background: #444343;
-  padding: 50px 0;  
+  padding: 20px 0; 
+  background-image: url(../images/background-registration.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
 }.logo img
   {
     width: 200px;
@@ -218,16 +220,22 @@ body {
 .container {
   width: 1400px;
   margin: 0 auto;
-  background: #fff; }
+  background:rgba(1, 1, 1, 0.4); }
 
 .signup-img {
   position: relative;
-  width: 385px;
-  margin-bottom: -8px; }
+  /* width: 385px; */
+   }
+
+  .signup-img img{
+    padding-top: 10px;
+    width: 100%;
+    border-radius: 20%;
+  }
 
 .signup-form {
   width: 1015px;
-  margin-top: -2px; }
+  margin: auto; }
 
 .signup-img-content {
   position: absolute;

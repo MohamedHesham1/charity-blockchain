@@ -151,14 +151,14 @@ button:focus {
 ============================================================================================ */
 .primary_btn {
   display: inline-block;
-  background: #60bc0f;
+  background: #dec20add;
   padding: 0px 50px;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 48px;
-  border: 1px solid #60bc0f;
+  border: 1px solid #dde1d8;
   border-radius: 0px;
   outline: none !important;
   box-shadow: none !important;
@@ -168,7 +168,7 @@ button:focus {
   transition: all 300ms linear 0s; }
   .primary_btn:hover {
     background: transparent;
-    color: #60bc0f; }
+    color: #dfe1dd; }
   .primary_btn.yellow_btn {
     background: #fdbb00 !important;
     border: 1px solid #fdbb00 !important;
@@ -308,8 +308,8 @@ button:focus {
       align-self: center;
       text-align: center; }
       .home_banner_area .banner_inner .banner_content .upper_text {
-        font-size: 50px;
-        font-family: "Lucida Calligraphy" ;
+        font-size: 60px;
+        
         text-transform: uppercase;
         color: #fdbb00; }
         @media (max-width: 767px) {
@@ -318,9 +318,9 @@ button:focus {
       .home_banner_area .banner_inner .banner_content h2 {
         color: #ffffff;
         margin-top: 0px;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
-        font-family: "Lucida Calligraphy" ;
+        
         line-height: 70px;
         text-transform: uppercase;
         margin-bottom: 20px; }
@@ -420,7 +420,7 @@ button:focus {
 ============================================================================================ */
 .causes_area {
   padding: 130px 0px 100px; }
-  @media (max-width: 991px) {
+  @media (max-width: 900px) {
     .causes_area {
       padding: 70px 0px 40px; } }
 
@@ -472,7 +472,7 @@ button:focus {
       .features_causes .card figure img {
         transition: all 300ms linear 0s; }
     .features_causes .card .card_inner_body {
-      padding: 40px 30px; }
+      padding: 90px 30px; }
       .features_causes .card .card_inner_body h4 {
         font-size: 20px; }
         @media (max-width: 1199px) and (min-width: 992px) {

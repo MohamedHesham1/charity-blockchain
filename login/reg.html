@@ -13,22 +13,13 @@
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 <body>
-
-
     <div class="main">
-
         <div class="container">
             <div class="signup-content">
-                <div class="signup-img">
-                    <img src="images/form-img.jpg" alt="" >
-                    <div class="signup-img-content">
-                        <h2>Register now </h2>
-                        <p> Donate Now !</p>
-                    </div>
-                </div>
-                <div class="signup-form">
+                <div class="signup-form" style="color:white ;">
                     <form  method="POST" action="../index.html" class="register-form" id="register-form">
                         <div class="form-row">
                             <div class="form-group">
@@ -60,7 +51,7 @@
                                 <div class="form-select">
                                     <div class="label-flex">
                                         <label for="meal_preference" class="required">type Donation</label>
-                                        <a href="#" class="form-link">Donation detail</a>
+                                        <a href="#" class="form-link" style="color:red ;">Donation detail</a>
                                     </div>
                                     <div class="select-list">
                                         <select name="meal_preference" id="meal_preference" >
@@ -72,9 +63,6 @@
                                         </select>
                                     </div>
                                 </div>
-
-
-
                                 <div class="form-input">
                                     <label for="Creditcardno" class="required">Creditcard NO </label>
                                     <input type="text"  name="Creditcardno" id="Creditcardno" pattern="[0-9]{16}" title="your credit no must be 16 digits"/>
@@ -83,16 +71,25 @@
                                     <label for="phone_number" class="required">Phone number</label>
                                     <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{11}"  title="your phone must be 11 digits"/>
                                 </div>
+                                <div class="form-input">
+                                    <label for="National ID" class="required">National ID</label>
+                                    <input type="tel" name="National ID" id="National ID" pattern="[0-9]{11}"  title="your phone must be 13 digits"/>
+                                </div>
                             </div>
                         </div>
                       <br>
-
-
                         <div class="form-submit">
                                  <input type="submit" value="Submit" formaction="javascript:SignUp();" class="submit" id="submit" name="submit"/>
                             <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
                         </div>
                     </form>
+                </div>
+                <div class="signup-img">
+                    <img src="images/donate.jpg" alt="" >
+                    <div class="signup-img-content">
+                        <h2>Register now </h2>
+                        <p> Donate Now !</p>
+                    </div>
                 </div>
             </div>
         </div>

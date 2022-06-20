@@ -22,7 +22,15 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/responsive.css">
         <style>
-        .img2 { margin-left: -90px; max-width: 245px; }
+        .img2 img{width: 50%;
+                    border-radius: 50%;}
+        body{background-image: url(images/background-registration.jpeg);
+                background-size: cover;
+                background-position: center center;}
+        .signup-content{
+            background-color: rgb(1, 1, 1 , 0.4);
+            
+        }
   </style>
 </head>
 <body>
@@ -31,7 +39,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
-                        <a class="navbar-brand logo_h img2" href="../index.html"><img src="../img/logo2.png" alt="" ></a>
+                        <a class="navbar-brand logo_h img2" style=" max-width: 100%;" href="../index.html"><img src="images/WhatsApp Image 2022-04-27 at 3.23.13 AM.jpeg" alt="" ></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -41,24 +49,13 @@
             </div>
         </div>
     </header>
-            
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         
-         
-    
-
     <div class="main">
 
         <section class="signup " style=" margin:auto ; max-width: 550px;">
             <div class="container"  >
                 <div class="signup-content" >
                     <form method="POST" id="signup-form" class="signup-form">
-                        <h2 class="form-title">login</h2>
+                        <h2 class="form-title" style="color: white;text-decoration: underline;"><a href="../events.html"></a>login</h2>
                         <div class="form-group">
   <input type="text" class="form-input" name="email" id="email" title="Example: username@mail.domain" placeholder="User name" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>                        </div>
                         <div class="form-group">
@@ -68,7 +65,7 @@
                         <div class="form-group">
  <input type="submit" name="submit" formaction="javascript:getpassword();" id="submit" class="form-submit" value="login"/>                        </div>
                     </form>
-                    <p class="loginhere">
+                    <p class="loginhere" style="color:white ;">
                             Not registered? <a href="reg.html" class="loginhere-link">Create an account</a>
                     </p>
                 </div>
